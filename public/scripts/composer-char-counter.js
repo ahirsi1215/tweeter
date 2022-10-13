@@ -1,9 +1,13 @@
-$(document).ready(function() {
-  $("#btn").on('input', function() {
-    console.log(this); //The this keyword is a reference to the button
-  });
-  
-  $("#btn").on('click', () => {
-    console.log(this); //The this keyword here refers to something else!
+$(document).ready(function () {
+  $("#tweet-text").on("input", function () {
+    const charLength = $(this).val().length;
+    const chars = $(this).parent();
+    const counter = chars.parent().find(".counter");
+    const charLengthFinal = 140 - charLength
+    counter.text(charLengthFinal);
+
+    if (charLengthFinal < 0) {
+      counter.css("color", "red");
+    }
   });
 });

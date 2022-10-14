@@ -1,16 +1,19 @@
-header {
+ .header {
  font-family: source sans pro;
  height: 520px;
- background-color: #e88010;
-background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+background-color: #003b07;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-img {
+.header img {
   border-style: none;
   position: relative;
   top: 130px;
+}
+.header div h2{
+  color: black;
 }

@@ -1,33 +1,37 @@
-button{
+.new-tweet button{
   display:flex;
   font-family: bungee;
   color: white;
   background-color: rgb(68, 68, 184);
   margin-right: 500px;
 }
-div{
+.new-tweet div{
   display:flex;
 }
-output{
+.new-tweet form{
+  font-family: bungee;
+}
+.new-tweet output{
   width: 100%;
   display:flex;
   font-family:bungee;
 }
-label {
+.new-tweet label {
   font-family:bungee;
   color:#545149;
 }
-button, input, optgroup, select, textarea {
+.new-tweet button, input, optgroup, select, textarea {
   margin-top: 20px
 }
-textarea {
+.new-tweet textarea {
   background-color: transparent!important;
     border-color: transparent!important;
     outline: transparent!important;
 }
-p{
+.newLine{
   border-top: 5px solid #545149;; 
   padding-top: 5px;
   margin-bottom: -10px;
   margin-top:-1px;
 }
+

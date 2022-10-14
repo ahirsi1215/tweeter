@@ -1,0 +1,65 @@
+
+.sampleTweet {
+  border: solid 5px;
+  padding: 0 25px;
+  margin: 3em 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.sampleHeader {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.sampleText{
+  display:flex;
+}
+.sampleFooter div {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+.sampleFooter footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  border-width: 3px 0 0 0;
+  border-style: solid;
+}
+.sampleLine{
+  border-top: 5px solid #545149;; 
+  padding-top: 5px;
+  margin-bottom: -10px;
+  margin-top:-1px;
+  font-size:15px;
+}
+.sampleFooter p{
+  font-size: 12;
+}
+.sampleTweet:hover{
+box-shadow: 0 0 50px rgba(33,33,33,.2);
+}
+.fa-flag:hover {
+  color: darkorange;
+}
+
+.fa-retweet:hover {
+  color: darkorange;
+}
+
+.fa-heart:hover {
+  color: darkorange;
+}
+.fa-solid{
+  font-weight: 900;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.fa-regular{
+  font-size:50px;
+  padding-right:15px;
+}

@@ -1,10 +1,12 @@
 // Fake data taken from initial-tweets.json
 $(document).ready(function() {
+  // xss prevention
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+  // after submitting tweet reload page
   $("form").on("submit", function (event) {
     event.preventDefault();
 
@@ -16,6 +18,7 @@ $(document).ready(function() {
       .then(function() {
         loadTweets();
       });
+      // refresh char counter and make empty
       $(this).find("#tweet-text").val("");
       $(this).find(".counter").val("140");
     })
@@ -47,6 +50,7 @@ $(document).ready(function() {
       $(".tweets-container").prepend($sumbitTweet);
     }
 }
+// load tweets to page
 const loadTweets = function() {
   $.ajax({
     url: "/tweets",

@@ -24,7 +24,7 @@ nav i {
   color: red;
   margin-top: 4%;
 }
-
+/* for phone */
 @media only screen and (min-width: 768px){
   nav{
     background-color: #003b07
@@ -36,6 +36,7 @@ nav i {
   }
 
 }
+/* for phone */
 @media only screen and (min-width: 1024px){
   nav{
     background-color:#003b07;

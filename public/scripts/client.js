@@ -5,6 +5,20 @@ $(document).ready(function() {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+  $("form").on("submit", function (event) {
+    event.preventDefault();
+
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: $(this).serialize(),
+    })
+      .then(function() {
+        loadTweets();
+      });
+      $(this).find("#tweet-text").val("");
+      $(this).find(".counter").val("140");
+    })
   const createTweetElement = function (tweet) {
     let $tweet =
       $(`<article class="sampleTweet">
@@ -43,4 +57,4 @@ const loadTweets = function() {
     });
 };
 loadTweets();
-});
+})

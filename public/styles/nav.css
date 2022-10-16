@@ -1,12 +1,48 @@
 nav {
-  position: fixed;
+  font-family: Bungee;
+  font-size: 30px;
   height: 120px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  justify-content: space-between;
+  position: fixed;
+  height: 6%;
   color: #FFFFFF;
-  background-color: #4056A1;
-  padding-top: 1.1em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  background-color: #003b07;
+  color: #f4f1ec;
 }
 
+nav p {
+  display:row;
+  font-family: Source sans pro;
+  margin-left: 60%;
+}
 
+nav i {
+  color: red;
+  margin-top: 4%;
+}
+
+@media only screen and (min-width: 768px){
+  nav{
+    background-color: #003b07
+  }
+  nav p {
+    display:row;
+    font-family: source sans-pro;
+    margin-left: 70%;
+  }
+
+}
+@media only screen and (min-width: 1024px){
+  nav{
+    background-color:#003b07;
+  }
+  nav p {
+    display:row;
+    font-family: source sans-pro;
+    margin-left: 70%;
+  }
+}

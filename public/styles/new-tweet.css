@@ -35,3 +35,12 @@
   margin-top:-1px;
 }
 
+.error{
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+  border: 5px red solid ;
+  color: red;
+  display: none;
+}
+

@@ -1,19 +1,56 @@
  .header {
- font-family: source sans pro;
- height: 520px;
-background-color: #003b07;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-}
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header img {
-  border-style: none;
-  position: relative;
-  top: 130px;
-}
-.header div h2{
+   height: 520px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+   background-color: #003b07;
+   font-family: 'Source Sans Pro', sans-serif;
+ }
+ .image, .textunder{
+  display:flex;
   color: black;
+  font-size:25px;
+  font-family: source sans-pro;
+ }
+
+ div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+
+ .header div h2 {
+   color: black;
+ }
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-left: 1000px;
+    margin-top: 100px;
+    max-width: 700px;
+  }
+  .image {
+    color:black;
+     border-style: none;
+     position: relative;
+     top: 20em;
+     border-style: none;
+    border-radius: 25px;
+     right:15em;
+     background-size: auto;
+     background-color: #003b07;
+     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");  
+   }
+   .textunder{
+    font-family: bungee;
+    color:rgb(85, 84, 84);
+    border-style: none;
+    position: relative;
+    top: 20em;
+    border-style: none;
+    border-radius: 25px;
+    right:15em;
+   }
 }

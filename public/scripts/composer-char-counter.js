@@ -8,6 +8,8 @@ $(document).ready(function () {
 
     if (charLengthFinal < 0) {
       counter.css("color", "red");
+    } else{
+      counter.css("color", "black");
     }
   });
 }); 

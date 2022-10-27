@@ -32,7 +32,7 @@ $(document).ready(function() {
           </div>
           <p>${tweet.user.handle}</p>
         </header>
-        <textarea name="text" class="newText">${escape(tweet.content.text)}</textarea>
+        <text name="text" class="newText">${escape(tweet.content.text)}</text>
         <footer class="newFooter">
           <p class="newLine">${timeago.format(tweet.created_at)}</p>
           <div>

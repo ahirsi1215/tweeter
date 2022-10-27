@@ -1,15 +1,27 @@
 // Fake data taken from initial-tweets.json
 $(document).ready(function() {
+  const $error = $(".error");
+        $error.hide();
   // xss prevention
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
+    
   };
   // after submitting tweet reload page
-  $("form").on("submit", function (event) {
+  const $form = $('#tweet-form');
+  $form.on('submit', function(event) {
     event.preventDefault();
-
+    const text = $('#tweet-text').val();
+    if (text.length > 140){
+   return $error.slideDown(1500), 
+       $error.slideUp(5000);
+    }
+   else if (text === "" || text.length === 0){
+    return $error.slideDown(1500), 
+    $error.slideUp(5000);
+   } else{
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -17,10 +29,12 @@ $(document).ready(function() {
     })
       .then(function() {
         loadTweets();
-      });
-      // refresh char counter and make empty
-      $(this).find("#tweet-text").val("");
+        $error.slideUp(200);
+        $(this).find("#tweet-text").val("");
       $(this).find(".counter").val("140");
+      })
+    }
+      // refresh char counter and make empty
     })
   const createTweetElement = function (tweet) {
     let $tweet =
@@ -50,6 +64,7 @@ $(document).ready(function() {
       $(".tweets-container").prepend($sumbitTweet);
     }
 }
+
 // load tweets to page
 const loadTweets = function() {
   $.ajax({

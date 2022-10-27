@@ -45,7 +45,15 @@
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
+
+        <form id="tweet-form" action="/tweets" method="POST">
+          <div class="error" id="err"> 
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Error!
+            <i class="fa-solid fa-triangle-exclamation"></i>
+         </div>
         <form  class="tweeting" action="/tweets" method="POST">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <p class="newLine"></p>

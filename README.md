@@ -12,3 +12,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- EJS
+- bcryptjs
+- Cookie-session
+
+## Getting Started
+1. Create a new repository
+2. Clone this repository to your local device
+3. Install using (npm install) and install all under the dependencies section
+4. (npm run local) to run the app and load the webpage
+5. Visit http://localhost:8080 in the browser to view the app!

@@ -1,5 +1,5 @@
 
-.sampleTweet {
+.newTweet {
   border: solid 5px;
   padding: 0 25px;
   margin: 3em 0;
@@ -7,22 +7,22 @@
   flex-flow: column nowrap;
 }
 
-.sampleHeader {
+.newHeader {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
 
-.sampleText{
+.newText{
   display:flex;
 }
-.sampleFooter div {
+.newFooter div {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
 }
 
-.sampleFooter footer {
+.newFooter footer {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -30,17 +30,17 @@
   border-width: 3px 0 0 0;
   border-style: solid;
 }
-.sampleLine{
+.newLine{
   border-top: 5px solid #545149;; 
   padding-top: 5px;
   margin-bottom: -10px;
   margin-top:-1px;
   font-size:15px;
 }
-.sampleFooter p{
+.newFooter p{
   font-size: 12;
 }
-.sampleTweet:hover{
+.newTweet:hover{
 box-shadow: 0 0 50px rgba(33,33,33,.2);
 }
 .fa-flag:hover {
@@ -62,4 +62,10 @@ box-shadow: 0 0 50px rgba(33,33,33,.2);
 .fa-regular{
   font-size:50px;
   padding-right:15px;
+}
+
+.textarea, #tweet-text{
+  width: 646px;
+  height: 56px;
+  
 }

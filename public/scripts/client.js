@@ -24,17 +24,17 @@ $(document).ready(function() {
     })
   const createTweetElement = function (tweet) {
     let $tweet =
-      $(`<article class="sampleTweet">
-        <header class="sampleHeader">
+      $(`<article class="newTweet">
+        <header class="newHeader">
           <div>
             <img src="${tweet.user.avatars}"></img>
             <p>${tweet.user.name}</p>
           </div>
           <p>${tweet.user.handle}</p>
         </header>
-        <textarea name="text" class="sampleText">${escape(tweet.content.text)}</textarea>
-        <footer class="sampleFooter">
-          <p class="sampleLine">${timeago.format(tweet.created_at)}</p>
+        <textarea name="text" class="newText">${escape(tweet.content.text)}</textarea>
+        <footer class="newFooter">
+          <p class="newLine">${timeago.format(tweet.created_at)}</p>
           <div>
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-retweet"></i>

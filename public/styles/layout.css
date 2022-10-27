@@ -28,6 +28,14 @@ main {
   background-color: #f4f1ec;
   justify-content: center;
 }
+.fa-angles-down::before{
+  content: "\f103";
+font-size: 40px;
+display: flex;
+left: -174px;
+position: relative;
+top: 15px;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

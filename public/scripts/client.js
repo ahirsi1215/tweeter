@@ -30,11 +30,10 @@ $(document).ready(function() {
       .then(function() {
         loadTweets();
         $error.slideUp(200);
-        $(this).find("#tweet-text").val("");
-      $(this).find(".counter").val("140");
       })
     }
-      // refresh char counter and make empty
+    $(this).find("#tweet-text").val("");
+    $(this).find(".counter").val("140");
     })
   const createTweetElement = function (tweet) {
     let $tweet =
